@@ -34,11 +34,12 @@ steps:
     majorVersion: '1'
     minorVersion: '0'
     patchVersion: '0'
- 
+
 - task: NuGetCommand@2
-  displayName: 'Publish NuGet package'
+  displayName: 'NuGet push'
   inputs:
-    command: push
-    publishVstsFeed: 'Tailspin.SpaceGame.Web.Models2'
+    command: 'push'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'SamuelThampy/Tailspin.SpaceGame.Web.Models2'
     allowPackageConflicts: true
   condition: succeeded()

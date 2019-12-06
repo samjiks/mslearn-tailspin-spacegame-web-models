@@ -40,6 +40,6 @@ steps:
   inputs:
     command: 'push'
     nuGetFeedType: 'internal'
-    publishVstsFeed: 'Tailspin.SpaceGame.Web.Models2'
+    publishVstsFeed: 'ae70a4e6-68ba-45ad-b83e-089cecb50f45'
     allowPackageConflicts: true
   condition: succeeded()

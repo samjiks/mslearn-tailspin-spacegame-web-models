@@ -35,11 +35,11 @@ steps:
     minorVersion: '0'
     patchVersion: '0'
 
-# - task: NuGetCommand@2
-#   displayName: 'NuGet push'
-#   inputs:
-#     command: 'push'
-#     nuGetFeedType: 'internal'
-#     publishVstsFeed: 'ae70a4e6-68ba-45ad-b83e-089cecb50f45'
-#     allowPackageConflicts: true
-#   condition: succeeded()
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: 'push'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'Tailspin.SpaceGame.Web.Models2'
+    allowPackageConflicts: true
+  condition: succeeded()

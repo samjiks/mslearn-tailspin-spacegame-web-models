@@ -1,4 +1,3 @@
-majorVersion: '2'
 
 pool:
   vmImage: 'Ubuntu-16.04'
